@@ -2,6 +2,11 @@ import cv2
 import numpy as np
 import time
 
+## added 2021.March Yuki Saito (Keio university)
+## this script simulate (x, y) position only EKF
+## please note that Bounding box cannot rotate and only track the actual position. 
+## We recommended to use the version v2 , which use (x,y, theta) and predict the both position and rotation
+
 
 def calc_center(point):
     #points : (4, 1, 2)
